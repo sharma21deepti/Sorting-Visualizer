@@ -1,0 +1,127 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:large;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+nav{
+    background-color: #3b3a3a;
+    color:white;
+    display:grid;
+    grid-template-columns:30% 60%;
+    padding:0% 5%;
+}
+
+nav .array-inputs{
+    display:grid;
+   grid-template-columns: 60% 40%;
+   place-content:center;
+    
+}
+nav .array-inputs #a_size{
+    padding:5% 0%;
+}
+nav .array-inputs #a_speed{
+    padding:5% 0%;
+}
+
+nav .array-inputs #a-generate{
+    padding:1% 0%;
+    margin:5px;
+    
+    }
+
+nav .array-inputs #a-generate:hover{
+    border:none;
+    background-color:grey;
+    padding:2% 0%;
+
+}
+
+nav .header-right{
+    display:flex;
+    flex-direction:column;
+}
+nav .header-right .nav-heading{
+    display:inline-block;
+    /* margin:20px; */
+    font-size: x-large;
+    padding:3% 0%;
+    margin-left:30%;
+}
+
+
+nav .header-right .algo{
+    display:grid;
+    grid-template-columns:repeat(6,16.666%);
+    padding:2% 0%;
+    margin:5px;
+}
+nav .header-right .algo button{
+    margin:5px;
+    padding:2% 0%;
+}
+nav .header-right .algo button:hover{
+    cursor:pointer;
+    background-color: grey;
+    color:white;
+    border:none;
+}
+nav .header-right .algo .but_locked{
+    background-color:grey;
+    cursor:pointer;
+}
+nav .header-right .algo .but_locked:hover{
+    cursor:pointer;
+
+}
+nav .header-right .algo .but_selected{
+    background-color:grey;
+    color:green;
+}
+nav .header-right .algo .but_selected:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+section{
+    display:grid;
+    grid-template-columns:20% 60% 20%;
+
+}
+section #info{
+    margin-top:20%;
+    margin-left:5%;
+}
+/* section #info h3{
+   
+} */
+section #info .Comp{
+    margin-top:10px;
+    
+}
+section #info .Comp .pair_def{
+    margin:2px;
+    
+    padding:2% 0%;
+}
+section #info .Comp .pair_def .sub_Heading{
+    display:inline;
+    font-weight:400;
+}
+section #info2{
+    margin-top:20%;
+}
+section #info2 .Comp .pair_def{
+    margin:2px;
+    
+    padding:2% 0%;
+}
+section #info2 .Comp .pair_def .sub_Heading{
+    display:inline;
+    font-weight:400;
+}
+.hide{
+    display:none;
+}

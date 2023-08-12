@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sorting Visualizer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="array-inputs">
+          <p>Size of array:</p>
+          <input
+            id="ar-size"
+            type="range"
+            min="7"
+            max="150"
+            step="1"
+            value="90"
+          />
+          <p>Speed of algorithm</p>
+          <input
+            id="ar-speed"
+            type="range"
+            min="1"
+            max="5"
+            step="1"
+            value="4"
+          />
+          <button id="a-generate">Generate New Array</button>
+        </div>
+
+        <div class="header-right">
+          <p class="nav-heading">Sorting Visualizer📊</p>
+          <div class="algo">
+            <button>Bubble</button>
+            <button>Selection</button>
+            <button>Insertion</button>
+            <button>Merge</button>
+            <button>Quick</button>
+            <button style="margin-right: 0px">Heap</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div id="info">
+        <h3>Time Complexity</h3>
+        <div class="Comp" id="time-comp">
+          <div class="pair_def">
+            <p class="sub_Heading">Worst Case</p>
+            <p id="Time_worst"></p>
+          </div>
+          <div class="pair_def">
+            <p class="sub_Heading">Average Case</p>
+            <p id="Time_avg"></p>
+          </div>
+          <div class="pair_def">
+            <p class="sub_Heading">Best Case</p>
+            <p id="Time_best"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="array_containers"></div>
+      <div id="info2">
+        <h3>Space Complexity</h3>
+        <div class="Comp" id="space_Comp">
+          <div class="pair_def">
+            <p class="sub_Heading">Worst case</p>
+            <p id="space_worst"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+
+    <script src="./scripts/main.js" async defer></script>
+    <script src="./scripts/visualization.js" async defer></script>
+    <script src="./scripts/bubble.js" async defer></script>
+    <script src="./scripts/selection.js" async defer></script>
+    <script src="./scripts/insertion.js" async defer></script>
+    <script src="./scripts/merge.js" async defer></script>
+    <script src="./scripts/quick.js" async defer></script>
+    <script src="./scripts/heap.js" async defer></script>
+</body>
+</html>
